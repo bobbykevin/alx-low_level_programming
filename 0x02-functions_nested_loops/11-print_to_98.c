@@ -1,23 +1,30 @@
-nclude <stdio.h>
+#include "main.h"
 
 /**
- *  * print_to_98 - Prints all natural numbers from input to 98,
- *   *               in order separated by a comma followed by a space.
- *    * @n: The number to begin counting at.
- *     */
-void print_to_98(int n)
+ *times_table - Prints the 9 times table, starting with 0.
+ */
+void times_table(void)
 {
-		if (n >= 98)
-				{
-							while (n > 98)
-											printf("%d, ", n--);
-									printf("%d\n", n);
-										}
+	int num, mult, prod;
 
+	for (num = 0; num <= 9; num++)
+	{
+		_putchar('0');
+
+		for (mult = 1; mult <= 9; mult++)
+		{
+			_putchar(',');
+			_putchar(' ');
+
+			prod = num * mult;
+
+			if (prod <= 9)
+				_putchar(' ');
 			else
-					{
-								while (n < 98)
-												printf("%d, ", n++);
-										printf("%d\n", n);
-											}
+				_putchar((prod / 10) + '0');
+
+			_putchar((prod % 10) + '0');
+		}
+		_putchar('\n');
+	}
 }
