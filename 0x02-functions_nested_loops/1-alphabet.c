@@ -6,6 +6,7 @@
  */
 void print_alphabet(void)
 {
+ Updated upstream
 	char c;
 
 	for (c = 'a'; c <= 'z'; c++)
@@ -13,4 +14,11 @@ void print_alphabet(void)
 		_putchar(c);
 	}
 _putchar('\n');
+
+		char c;
+			for (c = 'a'; c <= 'z'; c++)					{
+								_putchar(c);
+									}
+			_putchar('\n');
+ Stashed changes
 }
