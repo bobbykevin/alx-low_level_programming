@@ -1,24 +1,12 @@
 #include "main.h"
 /**
- * print_alphabet - function to print abc
- *
- * Return: 0
+ * print_alphabet - print all alphabet in lowercase
  */
+
 void print_alphabet(void)
 {
- Updated upstream
-	char c;
-
-	for (c = 'a'; c <= 'z'; c++)
-	{
-		_putchar(c);
-	}
-_putchar('\n');
-
-		char c;
-			for (c = 'a'; c <= 'z'; c++)					{
-								_putchar(c);
-									}
-			_putchar('\n');
- Stashed changes
+	char letter;
+	for (letter = 'a'; letter <= 'z'; letter++)
+		_putchar(letter);
+	_putchar('\n');
 }
