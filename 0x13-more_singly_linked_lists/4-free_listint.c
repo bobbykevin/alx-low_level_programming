@@ -10,8 +10,9 @@ void free_listint(listint_t *head)
 
 	while (head != NULL)
 	{
-		temp = head->next; / Store the next node in a temporary pointer
-		free(head);        / Free the current node
-		head = temp;       / Move head to the next node
+		temp = head->next;
+
+		free(head);
+		head = temp;
 	}
 }
